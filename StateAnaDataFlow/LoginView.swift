@@ -13,8 +13,12 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            TextField("Enter your name...", text: $name)
-                .multilineTextAlignment(.center)
+            HStack {
+                TextField("Enter your name...", text: $name)
+                    .multilineTextAlignment(.center)
+                Text(name.count.formatted())
+                    .foregroundColor(name.count < 3 ? .red : .green)
+            }
             Button(action: login) {
                 HStack {
                     Image(systemName: "checkmark.circle")
@@ -37,3 +41,5 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+
+
