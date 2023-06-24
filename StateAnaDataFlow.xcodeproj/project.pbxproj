@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		773D58DA2A46E85500D139A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D58D92A46E85500D139A8 /* User.swift */; };
+		773D58DE2A46EA5D00D139A8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D58DD2A46EA5D00D139A8 /* StorageManager.swift */; };
 		A88811522A3A1FFC00A4487D /* StateAnaDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */; };
 		A88811542A3A1FFC00A4487D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811532A3A1FFC00A4487D /* ContentView.swift */; };
 		A88811562A3A1FFD00A4487D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88811552A3A1FFD00A4487D /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		773D58D92A46E85500D139A8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		773D58DD2A46EA5D00D139A8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A888114E2A3A1FFC00A4487D /* StateAnaDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAnaDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAnaDataFlowApp.swift; sourceTree = "<group>"; };
 		A88811532A3A1FFC00A4487D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A88811612A3A3F0100A4487D /* LoginView.swift */,
 				A88811652A3A411000A4487D /* RootView.swift */,
 				773D58D92A46E85500D139A8 /* User.swift */,
+				773D58DD2A46EA5D00D139A8 /* StorageManager.swift */,
 				A888115F2A3A388800A4487D /* TimeCounter.swift */,
 				A88811632A3A3FE800A4487D /* UserSettings.swift */,
 				A88811552A3A1FFD00A4487D /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				A88811642A3A3FE800A4487D /* UserSettings.swift in Sources */,
 				A88811522A3A1FFC00A4487D /* StateAnaDataFlowApp.swift in Sources */,
 				773D58DA2A46E85500D139A8 /* User.swift in Sources */,
+				773D58DE2A46EA5D00D139A8 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
