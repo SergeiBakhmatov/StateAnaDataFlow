@@ -11,6 +11,8 @@ struct LoginView: View {
     @State private var name = ""
     @EnvironmentObject private var user: UserSettings
     
+    @AppStorage("isLoggedIn") var isLoggedIn = false
+    
     var body: some View {
         VStack {
             HStack {
@@ -18,12 +20,15 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
                 Text(name.count.formatted())
                     .foregroundColor(name.count < 3 ? .red : .green)
+                    
             }
+            .padding()
             Button(action: login) {
                 HStack {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
                 }
+                .disabled(name.count < 3 ? true : false)
             }
         }
     }
@@ -31,7 +36,7 @@ struct LoginView: View {
     private func login() {
         if !name.isEmpty {
             user.name = name
-            user.isLoggedIn.toggle()
+            isLoggedIn.toggle()
         }
     }
 }
